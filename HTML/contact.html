@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wayfinder Travel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        header {
+            background:#f8f9fa;
+            color: #0077b6;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #004080;
+            margin-bottom: 10px;
+            text-align: center;}
+        .home-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0077b6;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .contact-container {
+            margin: 40px 1in;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: rgb(0, 86, 179);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="home-button">Home</a>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>Have questions or need assistance? Reach out to us!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <h3>Contact Details</h3>
+        <p>Email: contact@wayfindertravel.com</p>
+        <p>Phone: +63 900 123 4567</p>
+        <p>Address: Bantayan Island, Cebu, Philippines</p>
+    </div>
+</body>
+</html>

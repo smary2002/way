@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Wayfinder Travel & Tours </title>
+    <style>
+         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { max-width: calc(100% - 2in); margin: 0.5in auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        h1 {
+            font-size: 2rem;
+            color: #004080;
+            margin-bottom: 10px;
+            text-align: center;}
+        h2 { border-bottom: 2px solid rgb(0, 86, 179); padding-bottom: 5px; }
+        ul { line-height: 1.6; }
+        a { color: rgb(0, 86, 179); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        header {
+            background: #f4f4f4;
+            color: #0077b6;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+
+        .home-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0077b6;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Terms and Conditions</h1>
+        <a href="guest.html" class="home-button">Back</a>
+    </header>
+
+
+
+    <div class="container">   
+        <h3>1. Booking and Payment</h3>
+        <ul>
+            <li>A <strong>50% down payment (DP)</strong> is required upon booking to confirm the reservation.</li>
+            <li>The DP is <strong>non-refundable</strong> in case of cancellation.</li>
+            <li>Full payment must be settled <strong>at least 24 hours</strong> before the scheduled tour.</li>
+            <li>Prices may change without prior notice due to unforeseen circumstances such as fuel price adjustments or new government regulations.</li>
+        </ul>
+        
+        <h3>2. Cancellation and Refund Policy</h3>
+        <ul>
+            <li>Cancellations made <strong>at least 7 days before</strong> the tour date are eligible for rescheduling but not for a refund.</li>
+            <li>No-shows or cancellations made <strong>less than 24 hours</strong> before the tour will be charged the full amount.</li>
+            <li>In case of bad weather or force majeure (e.g., typhoons, natural disasters), the tour may be rescheduled. If rescheduling is not possible, a <strong>partial refund</strong> may be granted.</li>
+        </ul>
+        
+        <h3>3. Tour Inclusions and Exclusions</h3>
+        <ul>
+            <li>Tour prices include transportation, entrance fees (where applicable), and tour guide services.</li>
+            <li>Meals, personal expenses, and additional activities not specified in the package are <strong>not included</strong> unless otherwise stated.</li>
+        </ul>
+        
+        <h3>4. Safety and Responsibility</h3>
+        <ul>
+            <li>Guests must follow the instructions of the tour guides and boat operators at all times.</li>
+            <li>The company is <strong>not responsible</strong> for lost belongings, personal injuries, or accidents due to guest negligence.</li>
+            <li>Guests must <strong>inform</strong> the company of any medical conditions or special needs before booking.</li>
+        </ul>
+        
+        <h3>5. Code of Conduct</h3>
+        <ul>
+            <li>Guests are expected to behave responsibly and respect local communities, marine life, and the environment.</li>
+            <li>Littering and vandalism are strictly prohibited. Guests who violate this rule may be subject to fines.</li>
+        </ul>
+        
+        <h3>6. Changes to Itinerary</h3>
+        <ul>
+            <li>The company reserves the right to <strong>modify the itinerary</strong> due to weather conditions, safety concerns, or unforeseen circumstances.</li>
+            <li>Any changes will be communicated to guests as early as possible.</li>
+        </ul>
+        
+        <h3>7. Liability Waiver</h3>
+        <ul>
+            <li>By booking a tour, guests acknowledge that they <strong>participate at their own risk</strong>.</li>
+            <li>The company and its affiliates shall not be held liable for any injuries, damages, or losses incurred during the tour.</li>
+        </ul>
+        
+    <div style="text-align: center; margin-top: 20px;">
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">I agree to the terms and conditions</label>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="btn" type="submit" style="background-color: rgb(0, 86, 179); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-family: Arial, sans-serif;" 
+        onmouseover="this.style.backgroundColor='#007BFF'" 
+        onmouseout="this.style.backgroundColor='rgb(0, 86, 179)'" 
+        onclick="confirmBooking()">Confirm Booking</button>
+    </div></div>
+    <script>
+        function confirmBooking() {
+            var checkbox = document.getElementById('agree');
+            if (checkbox.checked) {
+                alert('Booking confirmed!');
+            } else {
+                alert('You must agree to the terms and conditions before confirming the booking.');
+            }
+        }
+    </script>
+    </div>
+</body>
+</html>

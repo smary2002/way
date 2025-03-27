@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayfinder Travel - Explore Our Tours</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background:#f8f9fa;
+            color: #0077b6;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #004080;
+            margin-bottom: 10px;
+            text-align: center;}
+        .home-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0077b6;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+        .tour {
+            background: white;
+            margin: 20px auto;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        .tour-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .tour img {
+            width: 30%;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #0077b6;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .container { max-width: calc(100% - 2in); margin: 0.5in auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="home-button">Home</a>
+        <h1>Explore Our Services</h1>
+    </header>
+    
+    <section class="services">
+        <h2>Land Tours</h2>
+        <div class="tour">
+            <h3>The Ruins</h3>
+            <div class="tour-images">
+                <img src="images/ru.JPG" alt="The Ruins 1" style="width: 30%; height: auto; object-fit: cover; border-radius: 10px; margin: 5px;">
+                <video controls width="30%" style="border-radius: 10px; margin: 5px;">
+                    <source src="images/ruins.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="images/in.JPG" alt="The Ruins 3" style="width: 30%; height: auto; object-fit: cover; border-radius: 10px; margin: 5px;">
+            </div>
+            <p>Experience the grandeur of The Ruins, a historic mansion with a rich past.</p>
+        </div>
+        <div class="tour">
+            <h3>Omagieca Obo-ob Mangrove Garden</h3>
+            <div class="tour-images">
+                <img src="images/rove.jpg" alt="Omagieca Mangrove 1">
+                <img src="images/mang.webp" alt="Omagieca Mangrove 2">
+                <img src="images/wagi.jpeg" alt="Omagieca Mangrove 3">
+            </div>
+            <p>Walk through the lush mangrove forest and immerse yourself in nature.</p>
+        </div>
+        <div class="tour">
+            <h3>Ogtong Cave</h3>
+            <div class="tour-images">
+                <img src="images/og.jpg" alt="Ogtong Cave 1">
+                <img src="images/cave.jpg" alt="Ogtong Cave 2" style="width: 30%; border-radius: 10px; margin: 5px;">
+                <img src="images/tong.jpg" alt="Ogtong Cave 3">
+            </div>
+            <p>Discover the cool, clear waters of Ogtong Cave, a hidden gem in Bantayan.</p>
+        </div>
+    </section>
+    
+    <section class="services">
+        <h2>Island Hopping Tour</h2>
+        <div class="tour">
+            <h3>Virgin Island</h3>
+            <div class="tour-images">
+                <img src="images/vir.jpg" alt="Virgin Island 1" style="width: 35%; height: 200px; object-fit: cover; border-radius: 10px; margin: 5px;">
+                <img src="images/gin.jpg" alt="Virgin Island 2" style="width: 35%; height: 200px; object-fit: cover; border-radius: 10px; margin: 5px;">
+            </div>
+            <p>Visit the untouched beauty of Virgin Island with its stunning beaches.</p>
+        </div>
+        <div class="tour">
+            <h3>Baigad Lagoon</h3>
+            <div class="tour-images">
+                <img src="images/bai.jpg" alt="Baigad Lagoon 1">
+                <img src="images/lag.jpg" alt="Baigad Lagoon 2">
+                <img src="images/gad.jpg" alt="Baigad Lagoon 3">
+            </div>
+            <p>Relax in the turquoise waters of Baigad Lagoon, a hidden paradise.</p>
+        </div>
+        <div class="tour">
+            <h3>Paradise Beach</h3>
+            <div class="tour-images">
+                <img src="images/ra.jpg" alt="Paradise Beach 2" style="width: 35%; height: 200px; object-fit: cover; border-radius: 10px; margin: 5px;">
+                <img src="images/dise.jpg" alt="Paradise Beach 3" style="width: 35%; height: 200px; object-fit: cover; border-radius: 10px; margin: 5px;">
+            </div>
+            <p>Escape to Paradise Beach for a tranquil and scenic retreat.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Wayfinder Travel. All rights reserved.</p>
+    </footer>
+</body>
+</html>

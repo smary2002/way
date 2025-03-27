@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayFinder Travel & Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 1in; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #004080;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .menu a:hover {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            background: url('images/header.avif') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            top: 0;
+            left: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Main Content Section */
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .content h2 {
+            font-size: 2rem;
+            color: #004080;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Footer */    
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #004080;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .menu {
+                display: none;
+            }
+        }
+        .container  p { line-height: 1.6; text-align: justify; }
+        .container  h3 { text-align: left;line-height: 1.6; text-align: justify; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">WayFinder</div>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>"The ocean calls—your adventure awaits!" </h1>
+            <p>Discover tailored travel experiences just for you.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+        <h2>Welcome to WayFinder Travel & Tours</h2>
+        <p style="text-align: center;">"For those who love paradise, Wayfinder Travel & Tours turns dreams into reality—offering seamless adventures, breathtaking destinations, and unforgettable experiences."
+        </p>
+    </section>
+
+    <section id="about" class="container">
+        <p style="margin-bottom: 1.5em;">
+            Welcome to <strong>Wayfinder Travel & Tours</strong>, your trusted partner in crafting unforgettable travel experiences! 
+            Our company is dedicated to providing seamless, exciting, and immersive adventures, ensuring you explore the beauty of the world with ease and joy.
+        </p>
+
+        <h3 style="margin-bottom: 1.5em;">Why Choose Us?</h3>
+        <p style="margin-bottom: 1.5em;">
+            At Wayfinder Travel & Tours, we prioritize your comfort, safety, and satisfaction. With our expert guides, well-maintained transport, and commitment to excellence, we ensure that every journey is a remarkable one.
+        </p>
+        
+        <p style="text-align: center; font-weight: bold;">Start your adventure today and let us lead you to the wonders of the world!</p>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: right;">
+        <p> 2025 WayFinder Travel. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
+</script>
